@@ -1,0 +1,1 @@
+# 6_sinf_1ch_8_mavzu
