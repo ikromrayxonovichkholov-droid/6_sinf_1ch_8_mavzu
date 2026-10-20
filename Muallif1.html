@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Muallif haqida ma'lumot</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef3f8;
+            margin: 0;
+        }
+
+
+        /* ========================= */
+        /* SARLAVHA */
+        /* ========================= */
+
+        header {
+            background: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+
+        header h1 {
+            margin: 0;
+        }
+
+
+        /* ========================= */
+        /* ASOSIY QISM */
+        /* ========================= */
+
+        .container {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 20px;
+        }
+
+
+        /* ========================= */
+        /* BOSH SAHIFA TUGMASI */
+        /* ========================= */
+
+        .orqaga {
+            display: inline-block;
+            background: #444;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+
+        .orqaga:hover {
+            background: #222;
+        }
+
+
+        /* ========================= */
+        /* KARTALAR */
+        /* ========================= */
+
+        .kartalar {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+            margin-top: 25px;
+        }
+
+
+        .karta {
+
+            background: white;
+
+            border-radius: 15px;
+
+            padding: 20px;
+
+            text-align: center;
+
+            box-shadow:
+                0 4px 12px
+                rgba(0,0,0,0.15);
+
+            transition: 0.3s;
+        }
+
+
+        .karta:hover {
+
+            transform:
+                translateY(-8px);
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,0.25);
+        }
+
+
+        /* ========================= */
+        /* RASMLAR */
+        /* ========================= */
+
+        .karta img {
+
+            width:150px;
+
+            height: 200px;
+
+            object-fit: cover;
+
+            border-radius: 60%;
+
+            border: 0px solid #1565c0;
+
+            box-shadow:
+                0 3px 10px
+                rgba(0,0,0,0.2);
+
+            transition: 0.3s;
+        }
+
+
+        .karta img:hover {
+
+            transform:
+                scale(2.05);
+        }
+
+
+        /* ========================= */
+        /* KARTA SARLAVHASI */
+        /* ========================= */
+
+        .karta h2 {
+
+            color: #1565c0;
+
+            margin-top: 20px;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* ========================= */
+        /* KARTA MATNI */
+        /* ========================= */
+
+        .karta p {
+
+            color: #444;
+
+            line-height: 1.6;
+
+            font-size: 16px;
+        }
+
+
+        /* ========================= */
+        /* PASTKI QISM */
+        /* ========================= */
+
+        footer {
+
+            text-align: center;
+
+            background: #1565c0;
+
+            color: white;
+
+            padding: 20px;
+
+            margin-top: 40px;
+        }
+
+
+        /* ========================= */
+        /* TELEFON UCHUN */
+        /* ========================= */
+
+        @media (max-width: 800px) {
+
+            .kartalar {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ========================= -->
+<!-- SARLAVHA -->
+<!-- ========================= -->
+
+<header>
+
+    <h1>
+        MUALLIF HAQIDA MA'LUMOT
+    </h1>
+
+    <p>
+        Informatika va axborot texnologiyalari
+    </p>
+
+</header>
+
+
+<!-- ========================= -->
+<!-- ASOSIY QISM -->
+<!-- ========================= -->
+
+<div class="container">
+
+
+    <!-- BOSH SAHIFA -->
+
+    <a class="orqaga"
+       href="index.html">
+
+        ⬅ Bosh sahifaga qaytish
+
+    </a>
+
+
+    <!-- ========================= -->
+    <!-- 3 TA KARTA -->
+    <!-- ========================= -->
+
+    <div class="kartalar">
+
+
+        <!-- 1-KARTA -->
+
+        <div class="karta">
+
+            <img
+                src="images/Xolov.jpg"
+                alt="Muallif rasmi">
+
+            <h2>
+                <a href="Muallif.html">Muallif</a>
+            </h2>
+
+            <p>
+                Informatika va axborot
+                texnologiyalari fani
+                o'qituvchisi.
+            </p>
+
+        </div>
+
+
+        <!-- 2-KARTA -->
+
+        <div class="karta">
+
+            <img
+                src="images/Gerb_Bayroq_Emblem.gif"
+                alt="Ish faoliyati">
+
+            <h2>
+                Ish faoliyati
+            </h2>
+
+            <p>
+                Ta'lim jarayonida zamonaviy
+                axborot texnologiyalaridan
+                foydalanish.
+            </p>
+
+        </div>
+
+
+        <!-- 3-KARTA -->
+
+        <div class="karta">
+
+            <img
+                src="images/1-9.gif"
+                alt="Elektron darslik">
+
+            <h2>
+                Elektron darslik
+            </h2>
+
+            <p>
+                O'quvchilar uchun elektron
+                darsliklar va interaktiv
+                ta'lim materiallarini yaratish.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <p>
+        Muallif: Ikrom Rayxonovich Kholov
+    </p>
+
+    <p>
+        Informatika va axborot texnologiyalari
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
